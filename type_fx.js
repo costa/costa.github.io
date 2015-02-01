@@ -149,7 +149,7 @@ Throttler = (function() {
 
 time = new Time;
 
-font_repo = new GoogleFontRepository(time, 11);
+font_repo = new GoogleFontRepository(time, 66);
 
 type_fx = new TypeFx(time, font_repo);
 
