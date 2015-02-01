@@ -31,7 +31,7 @@ FontRepository = (function() {
     this.fonts = {
       style: ['normal', 'italic', 'oblique'],
       weight: [100, 200, 300, 400, 500, 600, 700, 800, 900],
-      size: ['x-small', 'small', 'medium', 'large', 'x-large', 'xx-large'],
+      size: ['20%', '40%', '80%', '160%', '320%'],
       family: ['sans-serif', 'serif', 'monospace', 'cursive', 'fantasy']
     };
   }
@@ -41,9 +41,13 @@ FontRepository = (function() {
   };
 
   FontRepository.prototype.randomCss = function() {
-    return {
-      'font': (this.random('style')) + " " + (this.random('weight')) + " " + (this.random('size')) + " " + (this.random('family'))
-    };
+    var prop;
+    prop = _(_(this.fonts).keys()).sample();
+    return _({}).tap((function(_this) {
+      return function(css) {
+        return css["font-" + prop] = "" + (_this.random(prop));
+      };
+    })(this));
   };
 
   return FontRepository;

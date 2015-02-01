@@ -20,14 +20,16 @@ class FontRepository
     @fonts =
       style: ['normal', 'italic', 'oblique']
       weight: [100, 200, 300, 400, 500, 600, 700, 800, 900]
-      size: ['x-small', 'small', 'medium', 'large', 'x-large', 'xx-large']
+      size: ['20%', '40%', '80%', '160%', '320%']
       family: ['sans-serif', 'serif', 'monospace', 'cursive', 'fantasy']
 
   random: (quality)->
     _(@fonts[quality]).sample()
 
   randomCss: ->
-    'font': "#{@random 'style'} #{@random 'weight'} #{@random 'size'} #{@random 'family'}"
+    prop = _(_(@fonts).keys()).sample()
+    _({}).tap (css)=>
+      css["font-#{prop}"] = "#{@random prop}"
 
 
 class GoogleFontRepository extends FontRepository
