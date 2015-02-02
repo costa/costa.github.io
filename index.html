@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang='en'>
   <head>
     <meta charset='utf-8'>
@@ -9,39 +9,47 @@
     <script src='//code.jquery.com/jquery-2.1.3.min.js'></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js'></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js'></script>
+    <style>
+      a {
+        text-decoration: none;
+        font-weight: 600;
+        color: #666;
+      }
+      p {
+        margin: 18px;
+      }
+      .type-fx {
+        color: #666;
+        transition: font-weight, font-size 0.15s linear;
+      }
+    </style>
   </head>
   <body>
+    <a href='https://github.com/costa'>
+      <img alt='Fork me on GitHub' data-canonical-src='https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png' src='https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67' style='position: absolute; top: 0; right: 0; border: 0;'>
+    </a>
     <header style='position: relative; height: 198px;'>
       <h1 style='display: table; position: absolute; width: 100%; height: 198px;'>
-        <p style='display: table-cell; width: 100%; vertical-align: middle; text-align: center;'><span class='type-fx'>Costa</span><span class='type-fx'>Shapiro</span><span class='type-fx'>'s</span>
-          <span class='type-fx'>App</span><span class='type-fx'>Shop</span></p>
+        <span style='display: table-cell; width: 100%; vertical-align: middle; text-align: center;'><span class='type-fx'>Costa</span><span class='type-fx'>Shapiro</span><span class='type-fx'>'s</span>
+          <span class='type-fx'>App</span><span class='type-fx'>Shop</span></span>
       </h1>
     </header>
     <main style='position: relative; height: 198px;'>
       <h2 style='display: table; position: absolute; width: 100%; height: 198px;'>
-        <p style='display: table-cell; width: 100%; vertical-align: middle; text-align: center;'>
-          <em><span class='type-fx'>Coming</span><span class='type-fx'>Soon</span><span class='type-fx'>...</span>
-          </em>
-        </p>
+        <span style='display: table-cell; width: 100%; vertical-align: middle; text-align: center;'>
+          <span class='type-fx'>Coming</span>
+          <span class='x-type-fx' style='display: none; font-size: 44.4%;'>Really</span>
+          <span class='type-fx'>Soon</span><span class='type-fx'>...</span></span>
       </h2>
     </main>
-    <footer style='font-family: sans-serif'>
+    <footer style='position: relative; font-family: sans-serif;'>
       <p>
         <em>Meanwhile, do be in touch:</em>
+        <br>
       </p>
       <p>
-        <a href='https://github.com/costa'>
-          <img alt='Fork me on GitHub' data-canonical-src='https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png' src='https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67' style='position: absolute; top: 0; right: 0; border: 0;'>
-        </a>
-      </p>
-      <p>
-        <a href='http://il.linkedin.com/in/costashapiro'><img src='https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png' width='160' height='33' alt="View Costa Shapiro's profile on LinkedIn" border='0'>
-        </a>
-      </p>
-      <p>
-        <a href='http://astrails.com' style='text-decoration: none'>
-          <img src='http://astrails.com/assets/logo_100x95-4b48c2d1e248f301572a8aad15d881c9.png' width='100' height='95' alt='Visit astrails.com' border='0' style='vertical-align:middle'>
-          The latest and the greatest guys I've been working for.
+        <a href='http://il.linkedin.com/in/costashapiro'>
+          <img src='https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png' width='160' height='33' alt="View Costa Shapiro's profile on LinkedIn" border='0'>
         </a>
       </p>
       <p>
@@ -53,6 +61,18 @@
       <p>
         <script async='' src='https://static.medium.com/embed.js'></script>
         <a class='m-profile' href='https://medium.com/@costa'>Costa Shapiro</a>
+      </p>
+      <p>
+        <a href='http://mines.mouldwarp.com'>
+          <large style='font: xx-large monospace; color: #ccc; background: #333; padding: 6px; border-radius: 3px;'>mines!</large>
+          — my old blog
+        </a>
+      </p>
+      <p>
+        <a href='http://astrails.com' style='width: 120px;'>
+          <img src='http://astrails.com/assets/logo_100x95-4b48c2d1e248f301572a8aad15d881c9.png' alt='Visit astrails.com' style='width: 100px; height: 95px; vertical-align: middle; border: 0;'>
+          <span style='display: inline-block; width: 240px; margin-left: 18px;'>The latest and the greatest guys I've been working for.</span>
+        </a>
       </p>
     </footer>
     <script src='type_fx.js'></script>

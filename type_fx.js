@@ -6,20 +6,20 @@ Time = (function() {
   _(Time.prototype).extend(Backbone.Events);
 
   function Time() {
-    this._setTimeout();
+    this._delay();
   }
 
-  Time.prototype._setTimeout = function() {
-    return this._to = setTimeout((function(_this) {
+  Time.prototype._delay = function() {
+    return this._to = _((function(_this) {
       return function() {
         return _this._emit();
       };
-    })(this), 40);
+    })(this)).delay(40);
   };
 
   Time.prototype._emit = function() {
     this.trigger('tick', new Date().getTime());
-    return this._setTimeout();
+    return this._delay();
   };
 
   return Time;
@@ -99,10 +99,6 @@ GoogleFontRepository = (function(_super) {
 TypeFx = (function() {
   function TypeFx(time, font_repo) {
     var randomFxNow;
-    $('.type-fx').css({
-      color: '#666',
-      transition: 'font-weight, font-size 0.15s linear'
-    });
     randomFxNow = (function(_this) {
       return function() {
         return Math.random() * (_this.probability || 4) < 1;
@@ -158,3 +154,7 @@ font_repo = new GoogleFontRepository(time, 66);
 type_fx = new TypeFx(time, font_repo);
 
 throttle_fx = new Throttler(time, type_fx, 'probability', [[0, 128], [16, 64], [8, 32], [4, 16], [2, 8], [1, 4], [0.5, 2], [0.5, 4], [1, 8], [2, 16], [4, 32], [8, 64], [16, 128]]);
+
+_(function() {
+  return $('.x-type-fx').addClass('type-fx').fadeIn().removeClass('x-type-fx');
+}).delay(32000);
