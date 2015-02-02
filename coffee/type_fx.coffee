@@ -20,7 +20,7 @@ class FontRepository
     @fonts =
       style: ['normal', 'italic', 'oblique']
       weight: [100, 200, 300, 400, 500, 600, 700, 800, 900]
-      size: ['20%', '40%', '80%', '160%', '320%']
+      size: ['44.4%', '66.6%', '100%', '150%', '225%']
       family: ['sans-serif', 'serif', 'monospace', 'cursive', 'fantasy']
 
   random: (quality)->
@@ -583,4 +583,4 @@ time = new Time
 font_repo = new GoogleFontRepository time, 66
 type_fx = new TypeFx time, font_repo
 throttle_fx = new Throttler time, type_fx, 'probability',
-  [[0, 64], [8, 32], [4, 16], [2, 8], [1, 4], [0.5, 2], [0.5, 4], [1, 8], [2, 16], [4, 32], [8, 64]]
+  [[0,128],[16,64],[8,32],[4,16],[2,8],[1,4],[0.5,2],[0.5,4],[1,8],[2,16],[4,32],[8,64],[16,128]]
