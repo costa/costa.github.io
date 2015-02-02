@@ -50,17 +50,17 @@
         %br
       %p
         %a{href: 'http://il.linkedin.com/in/costashapiro'}
-          %img{src: 'https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png', width: '160', height: '33', alt: "View Costa Shapiro's profile on LinkedIn", border: 0}
+          %img{src: 'https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png', alt: "View Costa Shapiro's profile on LinkedIn", style: 'width: 160px; height: 33px; border: 0;'}
       %p
         %a.twitter-follow-button{'data-show-count': 'false', 'data-size': 'large', href: 'https://twitter.com/costashapiro'} Follow @costashapiro
         :javascript
           !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
       %p
-        %script{async: '', src: 'https://static.medium.com/embed.js'}
+        %script{async: true, src: 'https://static.medium.com/embed.js'}
         %a.m-profile{href: 'https://medium.com/@costa'} Costa Shapiro
       %p
         %a{href: 'http://mines.mouldwarp.com'}
-          %large{style: 'font: xx-large monospace; color: #ccc; background: #333; padding: 6px; border-radius: 3px;'} mines!
+          %span{style: 'font: xx-large monospace; color: #ccc; background: #333; padding: 6px; border-radius: 3px;'} mines!
           — my old blog
       %p
         %a{href: 'http://astrails.com', style: 'width: 120px;'}
@@ -68,3 +68,4 @@
           %span{style: 'display: inline-block; width: 240px; margin-left: 18px;'} — the latest and the greatest guys I've been working for
 
     %script{src: 'type_fx.js'}
+    %script{async: true, src: 'uservoice.js'}
