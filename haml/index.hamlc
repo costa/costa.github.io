@@ -67,6 +67,22 @@
         %a{href: 'http://astrails.com', style: 'width: 120px;'}
           %img{src: 'http://astrails.com/assets/logo_100x95-4b48c2d1e248f301572a8aad15d881c9.png', alt: "Visit astrails.com", style: 'width: 100px; height: 95px; vertical-align: middle; border: 0;'}
           %span{style: 'display: inline-block; width: 240px; margin-left: 18px;'} — the latest and the greatest guys I've been working for
+      %hr
+      %p
+        %em Oh and big up guys for the:
+        %ul{style: 'font-family: monospace;'}
+          %li Bash+*NIX+friends
+          %li MacBookAir+OSX(+macports)
+          %li git+github+pages+atom*
+          %li Ruby+Rails+ecosystem
+          %li World+Wide+Web+technologies
+          %li jQuery+Backbone.js+Coffeescript+friends
+          %li PostgreSQL+Firebase
+          %li npm+gulp+bower+Browserify
+          %li HAML+SASS+Bootstrap
+          %li Trello+UserVoice+Dropbox+Gmail+Twitter
+          %li Google Fonts+DNSimple+Heroku
+          %li All that jazz!
 
     %script{src: 'type_fx.js'}
     %script{async: true, src: 'uservoice.js'}
