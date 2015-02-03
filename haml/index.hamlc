@@ -30,59 +30,90 @@
   %body
     %a{href: 'https://github.com/costa'}
       %img{alt: "Fork me on GitHub", 'data-canonical-src': 'https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png', src: 'https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67', style: 'position: absolute; top: 0; right: 0; border: 0;'}
-    %header{style: 'position: relative; height: 198px;'}
-      %h1{style: 'display: table; position: absolute; width: 100%; height: 198px;'}
-        %span{style: 'display: table-cell; width: 100%; vertical-align: middle; text-align: center;'}
-          %span.type-fx> Costa
-          %span.type-fx> Shapiro
-          %span.type-fx 's
-          %span.type-fx App
-          %span.type-fx> Shop
-    %main{style: 'position: relative; height: 198px;'}
-      %h2{style: 'display: table; position: absolute; width: 100%; height: 198px;'}
-        %span{style: 'display: table-cell; width: 100%; vertical-align: middle; text-align: center;'}
-          %span.type-fx Coming
-          %span.x-type-fx{style: 'display: none; font-size: 44.4%;'} Really
-          %span.type-fx Soon
-          %span.type-fx> ...
+    %header
+      %h1{style: 'position: relative; height: 198px;'}
+        %span{style: 'display: table; position: absolute; width: 100%; height: 198px;'}
+          %span{style: 'display: table-cell; width: 100%; vertical-align: middle; text-align: center;'}
+            %span.type-fx>
+              Costa
+            %span.type-fx>
+              Shapiro
+            %span.type-fx
+              's
+            %span.type-fx
+              App
+            %span.type-fx>
+              Shop
+      %h2{style: 'text-align: center; font-family: monospace;'}
+        one-stop full-stack construction
+    %main
+      %h2{style: 'position: relative; height: 198px;'}
+        %span{style: 'display: table; position: absolute; width: 100%; height: 198px;'}
+          %span{style: 'display: table-cell; width: 100%; vertical-align: middle; text-align: center;'}
+            %span.type-fx
+              Coming
+            %span.type-fx.fade-in-later{style: 'display: none; font-size: 44.4%;'}
+              Really
+            %span.type-fx
+              Soon
+            %span.type-fx>
+              \...
     %footer{style: 'position: relative; font-family: sans-serif;'}
       %p
-        %em Meanwhile, do be in touch:
+        %em
+          Meanwhile, do be in touch:
         %br
       %p
         %a{href: 'http://il.linkedin.com/in/costashapiro'}
           %img{src: 'https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png', alt: "View Costa Shapiro's profile on LinkedIn", style: 'width: 160px; height: 33px; border: 0;'}
       %p
-        %a.twitter-follow-button{'data-show-count': 'false', 'data-size': 'large', href: 'https://twitter.com/costashapiro'} Follow @costashapiro
+        %a.twitter-follow-button{'data-show-count': 'false', 'data-size': 'large', href: 'https://twitter.com/costashapiro'}
+          Follow @costashapiro
         :javascript
           !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
       %p
         %script{async: true, src: 'https://static.medium.com/embed.js'}
-        %a.m-profile{href: 'https://medium.com/@costa'} Costa Shapiro
+        %a.m-profile{href: 'https://medium.com/@costa'}
+          Costa Shapiro
       %p
         %a{href: 'http://mines.mouldwarp.com'}
-          %span{style: 'font: xx-large monospace; color: #ccc; background: #333; padding: 6px; border-radius: 3px;'} mines!
+          %span{style: 'font: xx-large monospace; color: #ccc; background: #333; padding: 6px; border-radius: 3px;'}
+            mines!
           — my old blog
       %p
         %a{href: 'http://astrails.com', style: 'width: 120px;'}
           %img{src: 'http://astrails.com/assets/logo_100x95-4b48c2d1e248f301572a8aad15d881c9.png', alt: "Visit astrails.com", style: 'width: 100px; height: 95px; vertical-align: middle; border: 0;'}
-          %span{style: 'display: inline-block; width: 240px; margin-left: 18px;'} — the latest and the greatest guys I've been working for
+          %span{style: 'display: inline-block; width: 240px; margin-left: 18px;'}
+            — the latest and the greatest guys I've been working for
       %hr
       %p
-        %em Oh and big up guys for the:
+        %em
+          Oh and big up guys for the:
         %ul{style: 'font-family: monospace;'}
-          %li Bash+*NIX+friends
-          %li MacBookAir+OSX(+macports)
-          %li git+github+pages+atom*
-          %li Ruby+Rails+ecosystem
-          %li World+Wide+Web+technologies
-          %li jQuery+Backbone.js+Coffeescript+friends
-          %li PostgreSQL+Firebase
-          %li npm+gulp+bower+Browserify
-          %li HAML+SASS+Bootstrap
-          %li Trello+UserVoice+Dropbox+Gmail+Twitter
-          %li Google Fonts+DNSimple+Heroku
-          %li All that jazz!
+          %li
+            Bash+*NIX+friends
+          %li
+            MacBookAir+OSX(+macports)
+          %li
+            git+github+pages+atom*
+          %li
+            Ruby+Rails+ecosystem
+          %li
+            World+Wide+Web+technologies
+          %li
+            jQuery+Backbone.js+Coffeescript+friends
+          %li
+            PostgreSQL+Firebase
+          %li
+            npm+gulp+bower+Browserify
+          %li
+            HAML+SASS+Bootstrap
+          %li
+            Trello+UserVoice+Dropbox+Gmail+Twitter
+          %li
+            Google Fonts+DNSimple+Heroku
+          %li
+            All that jazz!
 
     %script{src: 'type_fx.js'}
     %script{async: true, src: 'uservoice.js'}

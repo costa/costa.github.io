@@ -554,7 +554,7 @@ class TypeFx
       Math.random()*(@probability || 4) < 1
 
     time.on 'tick', =>
-      $('.type-fx').each ->
+      $('.type-fx:visible').each ->
         $(@).css font_repo.randomCss()  if randomFxNow()
 
 
@@ -580,7 +580,4 @@ font_repo = new GoogleFontRepository time, 66
 type_fx = new TypeFx time, font_repo
 throttle_fx = new Throttler time, type_fx, 'probability',
   [[0,128],[16,64],[8,32],[4,16],[2,8],[1,4],[0.5,2],[0.5,4],[1,8],[2,16],[4,32],[8,64],[16,128]]
-
-_(->
-  $('.x-type-fx').addClass('type-fx').fadeIn().removeClass('x-type-fx')
-).delay 32000
+_(-> $('.fade-in-later').fadeIn()).delay 32000

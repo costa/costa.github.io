@@ -1,4 +1,4 @@
-var FontRepository, GoogleFontRepository, Throttler, Time, TypeFx, font_repo, throttle_fx, time, type_fx,
+var Delayed, FontRepository, GoogleFontRepository, Throttler, Time, TypeFx, font_repo, throttle_fx, time, type_fx,
   __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   __hasProp = {}.hasOwnProperty;
 
@@ -106,7 +106,7 @@ TypeFx = (function() {
     })(this);
     time.on('tick', (function(_this) {
       return function() {
-        return $('.type-fx').each(function() {
+        return $('.type-fx:visible').each(function() {
           if (randomFxNow()) {
             return $(this).css(font_repo.randomCss());
           }
@@ -147,6 +147,27 @@ Throttler = (function() {
 
 })();
 
+Delayed = (function() {
+  function Delayed() {
+    $("[data-delayed]").each(function() {
+      var $el;
+      $el = $(this);
+      _($el.data('delayed')).each(function(k, v) {
+        return _((function(_this) {
+          return function() {
+            return $el[k];
+          };
+        })(this)).delay(v);
+      });
+      $el.data('delayed', null);
+      return console.log('POOOOP');
+    });
+  }
+
+  return Delayed;
+
+})();
+
 time = new Time;
 
 font_repo = new GoogleFontRepository(time, 66);
@@ -156,5 +177,5 @@ type_fx = new TypeFx(time, font_repo);
 throttle_fx = new Throttler(time, type_fx, 'probability', [[0, 128], [16, 64], [8, 32], [4, 16], [2, 8], [1, 4], [0.5, 2], [0.5, 4], [1, 8], [2, 16], [4, 32], [8, 64], [16, 128]]);
 
 _(function() {
-  return $('.x-type-fx').addClass('type-fx').fadeIn().removeClass('x-type-fx');
+  return $('.fade-in-later').fadeIn();
 }).delay(32000);
