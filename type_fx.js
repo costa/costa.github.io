@@ -1,4 +1,4 @@
-var Delayed, FontRepository, GoogleFontRepository, Throttler, Time, TypeFx, font_repo, throttle_fx, time, type_fx,
+var FontRepository, GoogleFontRepository, Throttler, Time, TypeFx, font_repo, throttle_fx, time, type_fx,
   __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   __hasProp = {}.hasOwnProperty;
 
@@ -144,27 +144,6 @@ Throttler = (function() {
   }
 
   return Throttler;
-
-})();
-
-Delayed = (function() {
-  function Delayed() {
-    $("[data-delayed]").each(function() {
-      var $el;
-      $el = $(this);
-      _($el.data('delayed')).each(function(k, v) {
-        return _((function(_this) {
-          return function() {
-            return $el[k];
-          };
-        })(this)).delay(v);
-      });
-      $el.data('delayed', null);
-      return console.log('POOOOP');
-    });
-  }
-
-  return Delayed;
 
 })();
 

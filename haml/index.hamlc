@@ -34,15 +34,15 @@
       %h1{style: 'position: relative; height: 198px;'}
         %span{style: 'display: table; position: absolute; width: 100%; height: 198px;'}
           %span{style: 'display: table-cell; width: 100%; vertical-align: middle; text-align: center;'}
-            %span.type-fx>
+            %span.type-fx><
               Costa
-            %span.type-fx>
+            %span.type-fx><
               Shapiro
-            %span.type-fx
+            %span.type-fx<
               's
-            %span.type-fx
+            %span.type-fx<
               App
-            %span.type-fx>
+            %span.type-fx><
               Shop
       %h2{style: 'text-align: center; font-family: monospace;'}
         one-stop full-stack construction
@@ -54,9 +54,9 @@
               Coming
             %span.type-fx.fade-in-later{style: 'display: none; font-size: 44.4%;'}
               Really
-            %span.type-fx
+            %span.type-fx<
               Soon
-            %span.type-fx>
+            %span.type-fx><
               \...
     %footer{style: 'position: relative; font-family: sans-serif;'}
       %p
@@ -77,21 +77,21 @@
           Costa Shapiro
       %p
         %a{href: 'http://mines.mouldwarp.com'}
-          %span{style: 'font: xx-large monospace; color: #ccc; background: #333; padding: 6px; border-radius: 3px;'}
+          %span{style: 'vertical-align: middle; font: 48px monospace; color: #ccc; background: #333; padding: 6px; border-radius: 3px;'}<
             mines!
           — my old blog
       %p
-        %a{href: 'http://astrails.com', style: 'width: 120px;'}
+        %a{href: 'http://astrails.com'}
           %img{src: 'http://astrails.com/assets/logo_100x95-4b48c2d1e248f301572a8aad15d881c9.png', alt: "Visit astrails.com", style: 'width: 100px; height: 95px; vertical-align: middle; border: 0;'}
           %span{style: 'display: inline-block; width: 240px; margin-left: 18px;'}
             — the latest and the greatest guys I've been working for
       %hr
       %p
         %em
-          Oh and big up guys for the:
+          Oh, and big up guys for:
         %ul{style: 'font-family: monospace;'}
           %li
-            Bash+*NIX+friends
+            UNIX
           %li
             MacBookAir+OSX(+macports)
           %li
