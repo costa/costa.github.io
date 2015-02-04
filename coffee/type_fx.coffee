@@ -551,7 +551,7 @@ class TypeFx
   constructor: (time, font_repo)->
 
     randomFxNow = =>
-      Math.random()*(@probability || 4) < 1
+      Math.random()*(@probability || Infinity) < 1
 
     time.on 'tick', =>
       $('.type-fx:visible').each ->
@@ -579,5 +579,5 @@ time = new Time
 font_repo = new GoogleFontRepository time, 66
 type_fx = new TypeFx time, font_repo
 throttle_fx = new Throttler time, type_fx, 'probability',
-  [[0,128],[16,64],[8,32],[4,16],[2,8],[1,4],[0.5,2],[0.5,4],[1,8],[2,16],[4,32],[8,64],[16,128]]
+  [[2,128],[0.5,32],[0.25,8],[0.5,4],[1,8],[2,16],[4,32],[8,64],[16,128],[32,256]]
 _(-> $('.fade-in-later').fadeIn()).delay 32000

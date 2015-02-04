@@ -101,7 +101,7 @@ TypeFx = (function() {
     var randomFxNow;
     randomFxNow = (function(_this) {
       return function() {
-        return Math.random() * (_this.probability || 4) < 1;
+        return Math.random() * (_this.probability || Infinity) < 1;
       };
     })(this);
     time.on('tick', (function(_this) {
@@ -153,7 +153,7 @@ font_repo = new GoogleFontRepository(time, 66);
 
 type_fx = new TypeFx(time, font_repo);
 
-throttle_fx = new Throttler(time, type_fx, 'probability', [[0, 128], [16, 64], [8, 32], [4, 16], [2, 8], [1, 4], [0.5, 2], [0.5, 4], [1, 8], [2, 16], [4, 32], [8, 64], [16, 128]]);
+throttle_fx = new Throttler(time, type_fx, 'probability', [[2, 128], [0.5, 32], [0.25, 8], [0.5, 4], [1, 8], [2, 16], [4, 32], [8, 64], [16, 128], [32, 256]]);
 
 _(function() {
   return $('.fade-in-later').fadeIn();
