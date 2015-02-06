@@ -119,6 +119,8 @@
             Google Fonts+DNSimple+Heroku
           %li
             All that jazz!
+      %p
+        %img{alt: "qr code", rel: 'nofollow', src: 'https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fcostashapiro.com&chs=180x180&choe=UTF-8&chld=L|2'}
 
     %script{src: 'type_fx.js'}
     %script{async: true, src: 'uservoice.js'}
