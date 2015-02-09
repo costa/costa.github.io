@@ -1,4 +1,4 @@
-var FontRepository, GoogleFontRepository, Throttler, Time, TypeFx, font_repo, throttle_fx, time, type_fx,
+var FontRepository, GoogleFontRepository, Throttler, Time, TypeFx, font_repo, slideTabs, throttle_fx, time, type_fx,
   __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   __hasProp = {}.hasOwnProperty;
 
@@ -153,8 +153,29 @@ font_repo = new GoogleFontRepository(time, 66);
 
 type_fx = new TypeFx(time, font_repo);
 
-throttle_fx = new Throttler(time, type_fx, 'probability', [[2, 128], [0.5, 32], [0.25, 8], [0.5, 4], [1, 8], [2, 16], [4, 32], [8, 64], [16, 128], [32, 256]]);
+throttle_fx = new Throttler(time, type_fx, 'probability', [[0, 128], [2, 32], [0.5, 8], [0.25, 4], [1, 8], [2, 16], [4, 32], [8, 64], [16, 128], [32, 256]]);
 
 _(function() {
-  return $('.fade-in-later').fadeIn();
-}).delay(32000);
+  return $('.slide-down-later').slideDown();
+}).delay(10000);
+
+slideTabs = function() {
+  return $('.tabs-slider > h3.active').each(function() {
+    var i;
+    i = $(this).index();
+    return $('.slider', $(this).parent()).queue(function() {
+      return $(this).animate({
+        scrollLeft: i * $(this).width()
+      }).dequeue();
+    });
+  });
+};
+
+$('.tabs-slider').on('click', '> h3:not(.active)', function() {
+  var $el;
+  $el = $('h3.active', $(this).parent()).removeClass('active');
+  $(this).addClass('active');
+  return slideTabs();
+});
+
+$(window).on('resize', _(slideTabs).throttle(150));

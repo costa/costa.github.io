@@ -13,27 +13,15 @@
     %script{src: '//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js'}
     %script{src: '//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js'}
 
-    :css
-      a {
-        text-decoration: none;
-        font-weight: 600;
-        color: #666;
-      }
-      p {
-        margin: 18px;
-      }
-      .type-fx {
-        color: #666;
-        transition: font-weight, font-size 0.15s;
-      }
+    %link{rel: 'stylesheet', href: 'casual.css'}
 
-  %body{style: 'width: 100%;'}
+  %body
     %a{href: 'https://github.com/costa'}
       %img{alt: "Fork me on GitHub", 'data-canonical-src': 'https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png', src: 'https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67', style: 'position: absolute; top: 0; right: 0; border: 0;'}
-    %header{style: 'width: 100%;'}
-      %h1{style: 'position: relative; width: 100%; height: 198px;'}
-        %span{style: 'display: table; position: absolute; width: 100%; height: 198px;'}
-          %span{style: 'display: table-cell; width: 100%; vertical-align: middle; text-align: center; overflow: hidden;'}
+    %header
+      %h1
+        %span.centering-context
+          %span.centering-inner
             %span
               %span.type-fx><
                 Costa
@@ -46,29 +34,68 @@
                 App
               %span.type-fx><
                 Shop
-      %h2{style: 'text-align: center; font-family: monospace;'}
+      %h2
         one-stop full-stack construction
-    %main{style: 'width: 100%;'}
-      %h2{style: 'position: relative; width: 100%; height: 198px;'}
-        %span{style: 'display: table; position: absolute; width: 100%; height: 198px;'}
-          %span{style: 'display: table-cell; width: 100%; vertical-align: middle; text-align: center; overflow: hidden;'}
-            -# open for business
-            -# how would you like to change the world today?
-            %span.type-fx
-              Coming
-            %span.type-fx.fade-in-later{style: 'display: none; font-size: 44.4%;'}
-              Really
-            %span.type-fx<
-              Soon
-            %span.type-fx><
-              \...
-    %footer{style: 'position: relative; font-family: sans-serif;'}
+    %main
+      %h2
+        %span.centering-context
+          %span.centering-inner
+            %span.slide-down-later
+              %span.type-fx
+                Open
+              %span.type-fx
+                For
+              %span.type-fx
+                Business
+      .tabs-slider
+        %h3.active
+          Your Business
+        %h3
+          My Business
+        .slider
+          .slide
+            .tab
+              %ul
+                %li
+                  You have an app idea and you want a credible assessment of the resources as to execute it.
+                  %br
+                  The results may surprise you one way or another.
+                %li
+                  You have allocated the resources and you want to go ahead and develop your
+                  %abbr{title: "minimal viable product"}<
+                    MVP
+                  app as soon as possible.
+                  %br
+                  The speed is of the essence, yet you don't want to develop debts.
+                %li
+                  You have an app project in development and you want a pragmatic expert review of its technology, architecture or UX.
+                  %br
+                  Avoid personal attachment to existing code, stay business-oriented.
+                %li
+                  Well you may even be considering building an app alongside your main product line — and off your current area of expertise — so you have to decide between building a new team in house or just launching the damn app.
+                  %br
+                  The team-building may be delayed until the app — built by app experts — has proven its value for your business.
+            .tab
+              %ul
+                %li
+                  I have a software development record going back to the pre-Internet era and visiting quite a few remarkable areas on the way.
+                  I've been loving to code since I learnt how; now I equally enjoy when my projects make business success.
+                %li
+                  I'm lucky to possess some rich academic background and have been crunching algorithms, complex structures and scientific data on more than one job.
+                  Naturally, I have both experience and interest in what is now called
+                  %em
+                    Big Data.
+                %li
+                  I've conducted numerous system integrations and I'm currently particularly fluent with social networking components.
+                %li
+                  I advocate lean and mean standards-based development, and have aquired criteria for chosing the optimal component or technique for a project situation.
+                  I enjoy being a part of the global developer's community which is now vital to efficient everyday work.
+    %footer
       %p
         %em
-          Meanwhile, do be in touch:
-        %br
+          Now, do be in touch:
       %p
-        %a{href: 'http://il.linkedin.com/in/costashapiro'}
+        %a{href: 'https://il.linkedin.com/in/costashapiro'}
           %img{src: 'https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png', alt: "View Costa Shapiro's profile on LinkedIn", style: 'width: 160px; height: 33px; border: 0;'}
       %p
         %a.twitter-follow-button{'data-show-count': 'false', 'data-size': 'large', href: 'https://twitter.com/costashapiro'}
@@ -81,46 +108,53 @@
           Costa Shapiro
       %p
         %a{href: 'http://mines.mouldwarp.com'}
-          %span{style: 'vertical-align: middle; font: 48px monospace; color: #ccc; background: #333; padding: 6px; border-radius: 3px;'}<
+          %span.mines-logo<
             mines!
-          %span{style: 'display: inline-block; max-width: 25%; vertical-align: middle;'}<
+          %span.short-logo-desc<
             — my old blog
       %p
         %a{href: 'http://astrails.com'}
-          %img{src: 'http://astrails.com/assets/logo_100x95-4b48c2d1e248f301572a8aad15d881c9.png', alt: "Visit astrails.com", style: 'width: 100px; height: 95px; vertical-align: middle; border: 0;'}
-          %span{style: 'display: inline-block; max-width: 50%; margin-left: 18px; vertical-align: middle;'}
+          %img.astrails-logo{src: 'http://astrails.com/assets/logo_100x95-4b48c2d1e248f301572a8aad15d881c9.png', alt: "Visit astrails.com"}
+          %span.long-logo-desc
             — the latest and the greatest guys I've been working for
       %hr
+      %br
+      %em
+        Oh, and big up guys for:
+      %ul.tech-specs
+        %li
+          UNIX
+        %li
+          MacBookAir+OSX(+macports)
+        %li
+          git+github+pages+atom*
+        %li
+          Ruby+Rails+ecosystem
+        %li
+          World+Wide+Web+technologies
+        %li
+          jQuery+Backbone.js+Coffeescript
+        %li
+          PostgreSQL+Firebase
+        %li
+          npm+gulp+bower+Browserify
+        %li
+          HAML+SASS+Bootstrap
+        %li
+          Mixpanel+UserVoice+CloudFlare
+        %li
+          AWS+DNSimple+Heroku+CircleCI
+        %li
+          WorkFlowy+Trello+Dropbox+Gmail
+        %li
+          Google Fonts
+        %li
+          All that jazz!
       %p
+        %img.qr-code{alt: "qr code", rel: 'nofollow', src: 'https://chart.googleapis.com/chart?cht=qr&amp;chl=https%3A%2F%2Fcostashapiro.com&amp;chs=180x180&amp;choe=UTF-8&amp;chld=L%7C2'}
+      %p.uservoice-hint
         %em
-          Oh, and big up guys for:
-        %ul{style: 'font-family: monospace;'}
-          %li
-            UNIX
-          %li
-            MacBookAir+OSX(+macports)
-          %li
-            git+github+pages+atom*
-          %li
-            Ruby+Rails+ecosystem
-          %li
-            World+Wide+Web+technologies
-          %li
-            jQuery+Backbone.js+Coffeescript+friends
-          %li
-            PostgreSQL+Firebase
-          %li
-            npm+gulp+bower+Browserify
-          %li
-            HAML+SASS+Bootstrap
-          %li
-            WorkFlowy+Trello+UserVoice+Dropbox+Gmail+Twitter
-          %li
-            Google Fonts+DNSimple+Heroku
-          %li
-            All that jazz!
-      %p
-        %img{alt: "qr code", rel: 'nofollow', src: 'https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fcostashapiro.com&chs=180x180&choe=UTF-8&chld=L|2'}
+          Drop me a line →
 
     %script{src: 'type_fx.js'}
-    %script{async: true, src: 'uservoice.js'}
+    %script{src: 'uservoice.js', async: true}

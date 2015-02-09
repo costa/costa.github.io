@@ -1,0 +1,130 @@
+body {
+  width: 100%;
+  font-size: 15px;
+  font-family: sans-serif; }
+
+header {
+  width: 100%;
+  overflow: hidden; }
+  header h1 {
+    position: relative;
+    width: 100%;
+    height: 198px; }
+  header h2 {
+    text-align: center;
+    font-family: monospace; }
+
+main {
+  width: 100%;
+  overflow: hidden; }
+  main h2 {
+    position: relative;
+    width: 100%;
+    height: 198px; }
+
+footer {
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+
+.centering-context {
+  display: table;
+  position: absolute;
+  width: 100%;
+  height: 198px; }
+
+.centering-inner {
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center; }
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #666; }
+
+abbr {
+  border-bottom: dotted 1px; }
+
+p {
+  margin: 18px; }
+
+li {
+  margin-bottom: 3px;
+  margin-right: 6px; }
+
+.type-fx {
+  color: #666;
+  transition: font-weight, font-size 0.15s; }
+
+.slide-down-later {
+  display: none; }
+  .slide-down-later.type-fx, .slide-down-later .type-fx {
+    font-size: 150%; }
+
+.tabs-slider {
+  width: 100%;
+  text-align: center; }
+  .tabs-slider h3 {
+    display: inline;
+    margin: 6px;
+    padding: 6px;
+    border-radius: 3px;
+    transition: color, background-color 0.4s;
+    cursor: pointer;
+    color: #333;
+    background-color: #CCC; }
+    .tabs-slider h3.active {
+      cursor: default;
+      color: #CCC;
+      background-color: #333; }
+  .tabs-slider .slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    text-align: left; }
+    .tabs-slider .slider .slide {
+      white-space: nowrap; }
+      .tabs-slider .slider .slide .tab {
+        white-space: normal;
+        display: inline-block;
+        width: 100%; }
+        .tabs-slider .slider .slide .tab > * {
+          margin: 21px; }
+
+.uservoice-hint {
+  text-align: right;
+  margin-right: 64px; }
+
+.mines-logo {
+  vertical-align: middle;
+  font: 48px monospace;
+  color: #ccc;
+  background: #333;
+  padding: 6px;
+  border-radius: 3px; }
+
+.short-logo-desc {
+  display: inline-block;
+  max-width: 25%;
+  vertical-align: middle; }
+
+.astrails-logo {
+  width: 100px;
+  height: 95px;
+  vertical-align: middle;
+  border: 0; }
+
+.long-logo-desc {
+  display: inline-block;
+  max-width: 50%;
+  margin-left: 18px;
+  vertical-align: middle; }
+
+.tech-specs {
+  font-family: monospace; }
+
+.qr-code {
+  width: 180px;
+  height: 180px; }

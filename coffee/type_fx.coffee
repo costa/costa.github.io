@@ -579,5 +579,19 @@ time = new Time
 font_repo = new GoogleFontRepository time, 66
 type_fx = new TypeFx time, font_repo
 throttle_fx = new Throttler time, type_fx, 'probability',
-  [[2,128],[0.5,32],[0.25,8],[0.5,4],[1,8],[2,16],[4,32],[8,64],[16,128],[32,256]]
-_(-> $('.fade-in-later').fadeIn()).delay 32000
+  [[0,128],[2,32],[0.5,8],[0.25,4],[1,8],[2,16],[4,32],[8,64],[16,128],[32,256]]
+_(-> $('.slide-down-later').slideDown()).delay 10000
+
+slideTabs = ->
+  $('.tabs-slider > h3.active').each ->
+    i = $(@).index()
+    $('.slider', $(@).parent()).queue ->
+      $(@).animate(
+        scrollLeft: i * $(@).width()
+      ).dequeue()
+$('.tabs-slider').on 'click', '> h3:not(.active)', ->
+  $el =
+  $('h3.active', $(@).parent()).removeClass 'active'
+  $(@).addClass 'active'
+  slideTabs()
+$(window).on 'resize', _(slideTabs).throttle 150
