@@ -540,7 +540,7 @@ class GoogleFontRepository extends FontRepository
     time.on 'tick', loadRandomFont
 
   _loadFont: (font)->
-    $("<link href='http://fonts.googleapis.com/css?#{$.param family: font}' rel='stylesheet'>").
+    $("<link href='//fonts.googleapis.com/css?#{$.param family: font}' rel='stylesheet'>").
       appendTo('head').
       on 'load', =>
         @fonts.family.push font

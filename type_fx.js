@@ -83,7 +83,7 @@ GoogleFontRepository = (function(_super) {
   }
 
   GoogleFontRepository.prototype._loadFont = function(font) {
-    return $("<link href='http://fonts.googleapis.com/css?" + ($.param({
+    return $("<link href='//fonts.googleapis.com/css?" + ($.param({
       family: font
     })) + "' rel='stylesheet'>").appendTo('head').on('load', (function(_this) {
       return function() {
