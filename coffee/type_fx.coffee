@@ -392,7 +392,6 @@ class GoogleFontRepository extends FontRepository
     "Patua One",
     "Paytone One",
     "Petrona",
-    "Phetsarath",
     "Philosopher",
     "Piedra",
     "Pinyon Script",
