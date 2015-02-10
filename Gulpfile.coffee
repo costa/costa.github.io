@@ -24,7 +24,7 @@ gulp.task 'sass', ->
         .pipe(sass())
         .pipe(gulp.dest('.'))
 
-gulp.task 'watch', ->
+gulp.task 'watch', ['default'], ->
   gulp.watch HAML_FILES, ['hamlc']
   gulp.watch SCSS_FILES, ['sass']
   gulp.watch COFFEE_FILES, ['coffee']
