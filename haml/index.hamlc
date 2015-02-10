@@ -61,7 +61,7 @@
                     credible assessment
                   of the resources as to execute it.
                   %br
-                  The results may surprise you one way or another.
+                  The results may surprise you one way or the other.
                 %li
                   You have allocated the resources and you want to go ahead and
                   %strong
@@ -102,24 +102,20 @@
         %em
           Now, do be in touch, I'm friendly:
       %p
-        %a{href: '&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#x3a;&#99;&#111;&#115;&#116;&#97;&#x40;&#109;&#111;&#x75;&#x6c;&#100;&#x77;&#97;&#114;&#112;&#46;&#99;&#111;&#x6d;', title: "Mail Costa"}
-          &#99;&#111;&#115;&#116;&#97;&#x40;&#109;&#111;&#x75;&#x6c;&#100;&#x77;&#97;&#114;&#112;&#46;&#99;&#111;&#x6d;
+        %a{href: '&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#x3a;&#99;&#111;&#115;&#116;&#97;&#x40;&#109;&#111;&#x75;&#x6c;&#100;&#x77;&#97;&#114;&#112;&#46;&#99;&#111;&#x6d;', title: "Mail Costa"} &#99;&#111;&#115;&#116;&#97;&#x40;&#109;&#111;&#x75;&#x6c;&#100;&#x77;&#97;&#114;&#112;&#46;&#99;&#111;&#x6d;
       %p
         %a{href: 'https://il.linkedin.com/in/costashapiro'}
           %img{src: 'https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png', alt: "View Costa Shapiro's profile on LinkedIn", style: 'width: 160px; height: 33px; border: 0;'}
       %p
-        %a.twitter-follow-button{'data-show-count': 'false', 'data-size': 'large', href: 'https://twitter.com/costashapiro'}
-          Follow @costashapiro
+        %a.twitter-timeline{'data-widget-id': '565146128711053312', href: 'https://twitter.com/costashapiro'} Tweets by @costashapiro
         :javascript
-          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
       %p
         %script{async: true, src: 'https://static.medium.com/embed.js'}
-        %a.m-profile{href: 'https://medium.com/@costa'}
-          Costa Shapiro
+        %a.m-profile{href: 'https://medium.com/@costa'} Costa Shapiro
       %p
         %a{href: 'http://mines.mouldwarp.com'}
-          %span.mines-logo<
-            mines!
+          %span.mines-logo< mines!
           %span.short-logo-desc<
             — my old blog
       %p
