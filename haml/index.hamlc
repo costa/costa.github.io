@@ -124,9 +124,9 @@
           %span.long-logo-desc
             — the latest and the greatest guys I've been working for
       %hr
-      %br
-      %em
-        Oh, and big up guys for my favourite working tools:
+      %p
+        %em
+          Oh, and big up guys for my favourite working tools:
       %ul.tech-specs
         %li
           UNIX
