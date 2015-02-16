@@ -4,9 +4,10 @@
     %meta{charset: 'utf-8'}
     %meta{name: 'viewport', content: 'width=device-width, initial-scale=1'}
 
-    %title CostaShapiro's AppShop
-    %meta{name: 'description', content: "CostaShapiro's AppShop"}
-    %meta{name: 'author', content: "Costa Shapiro"}
+    %title Costa Shapiro's App Shop
+    %meta{name: 'description', content: "Costa Shapiro's App Shop: Building an app for your business? Building apps is my business, it is one-stop full-stack construction . 25 years of industry experience at your service."}
+    %meta{name: 'author', content: "Costa Shapiro's App Shop"}
+    %link{rel: 'image_src', href: 'logo-512x512.png'}
 
     %script{src: '//code.jquery.com/jquery-2.1.3.min.js'}
     %script{src: '//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js'}
@@ -15,8 +16,6 @@
     %link{rel: 'stylesheet', href: 'casual.css'}
 
   %body
-    %a{href: 'https://github.com/costa'}
-      %img{alt: "Fork me on GitHub", 'data-canonical-src': 'https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png', src: 'https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67', style: 'position: absolute; top: 0; right: 0; border: 0;'}
     %header
       %h1
         %span.centering-context
@@ -97,6 +96,22 @@
                 %li
                   I advocate lean and mean standards-based development, and have aquired criteria for chosing the optimal component or technique for a project situation.
                   I enjoy being a part of the global developer's community which is now vital to efficient everyday work.
+      .work
+        %h3
+          My project leading work
+        %p
+          %a{href: 'http://aero-plan.com'}
+            %img.aero-plan.logo{src: 'aero-plan-logo-273x140.png', alt: "Visit aero-plan.com"}
+            %span.long-logo-desc
+              — Aero-plan.com: a currently running U.S.-based project
+        %p
+          %a{href: 'http://fb-crush.com'}
+            %img.fb-crush.logo{src: 'fb-crush-logo-250x125.jpg', alt: "Visit fb-crush.com"}
+            %span.long-logo-desc
+              — fb-CRUSH.com: a currently running toy project of mine
+        %p
+          %a{href: 'http://astrails.com/work'}
+            %em Some other projects may be found in Astrails.com portfolio — ask for details
     %footer
       %p
         %em
@@ -115,18 +130,18 @@
         %a.m-profile{href: 'https://medium.com/@costa'} Costa Shapiro
       %p
         %a{href: 'http://mines.mouldwarp.com'}
-          %span.mines-logo< mines!
+          %span.mines.logo< mines!
           %span.short-logo-desc<
             — my old blog
       %p
         %a{href: 'http://astrails.com'}
-          %img.astrails-logo{src: 'astrails_100x95.png', alt: "Visit astrails.com"}
+          %img.astrails.logo{src: 'astrails_100x95.png', alt: "Visit astrails.com"}
           %span.long-logo-desc
             — the latest and the greatest guys I've been working for
       %hr
       %p
         %em
-          Oh, and big up guys for my favourite working tools:
+          Oh, and thank you world for my favourite working tools:
       %ul.tech-specs
         %li
           UNIX
@@ -156,6 +171,13 @@
           Google Fonts
         %li
           All that jazz!
+      %hr
+      .social
+        %a.twitter-share-button{'data-count': 'none', 'data-text': "Costa Shapiro's App Shop: one-stop full-stack construction", 'data-via': 'costashapiro', 'data-size': 'large', href: 'https://twitter.com/share'} Tweet
+        %br
+        :javascript
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+        .fb-like{'data-action': 'like', 'data-href': 'https://www.facebook.com/costashapiro.appshop', 'data-layout': 'standard', 'data-share': 'true', 'data-show-faces': 'false'}
       %p
         %img.qr-code{alt: "qr code", rel: 'nofollow', src: 'https://chart.googleapis.com/chart?cht=qr&amp;chl=https%3A%2F%2Fcostashapiro.com&amp;chs=180x180&amp;choe=UTF-8&amp;chld=L%7C2'}
       %p.uservoice-hint
@@ -164,3 +186,15 @@
 
     %script{src: 'type_fx.js'}
     %script{src: 'uservoice.js', async: true}
+
+    %a{href: 'https://github.com/costa'}
+      %img{alt: "Fork me on GitHub", 'data-canonical-src': 'https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png', src: 'https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67', style: 'position: absolute; top: 0; right: 0; border: 0;'}
+    #fb-root
+    :javascript
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=534280453345884&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));

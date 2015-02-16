@@ -63,6 +63,9 @@ li {
   .slide-down-later.type-fx, .slide-down-later .type-fx {
     font-size: 150%; }
 
+h3 {
+  text-align: center; }
+
 .tabs-slider {
   width: 100%;
   text-align: center; }
@@ -93,28 +96,10 @@ li {
         .tabs-slider .slider .slide .tab > * {
           margin: 21px; }
 
-.uservoice-hint {
-  text-align: right;
-  margin-right: 64px; }
-
-.mines-logo {
-  vertical-align: middle;
-  font: 48px monospace;
-  color: #ccc;
-  background: #333;
-  padding: 6px;
-  border-radius: 3px; }
-
 .short-logo-desc {
   display: inline-block;
   max-width: 25%;
   vertical-align: middle; }
-
-.astrails-logo {
-  width: 100px;
-  height: 95px;
-  vertical-align: middle;
-  border: 0; }
 
 .long-logo-desc {
   display: inline-block;
@@ -125,6 +110,37 @@ li {
 .tech-specs {
   font-family: monospace; }
 
+.social {
+  margin: 18px;
+  line-height: 200%; }
+
 .qr-code {
   width: 180px;
   height: 180px; }
+
+.uservoice-hint {
+  text-align: right;
+  margin-right: 64px; }
+
+.logo {
+  vertical-align: middle;
+  border: 0; }
+
+.mines {
+  font: 48px monospace;
+  color: #ccc;
+  background: #333;
+  padding: 6px;
+  border-radius: 3px; }
+
+.astrails {
+  width: 100px;
+  height: 95px; }
+
+.aero-plan {
+  width: 273px;
+  height: 140px; }
+
+.fb-crush {
+  width: 273px;
+  height: 140px; }
