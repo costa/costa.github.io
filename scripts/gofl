@@ -1,0 +1,2 @@
+grep -E '^  "name"' `grr 'visibility": "External' METADATA.json` | cut -d: -f3 > ~/work/costashapiro/tmp/gofl
+grep -L 'weight": 400' */METADATA.json
