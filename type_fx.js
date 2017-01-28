@@ -153,7 +153,7 @@ font_repo = new GoogleFontRepository(time, 66);
 
 type_fx = new TypeFx(time, font_repo);
 
-throttle_fx = new Throttler(time, type_fx, 'probability', [[0, 128], [2, 32], [0.5, 8], [0.25, 4], [1, 8], [2, 16], [4, 32], [8, 64], [16, 128], [32, 256]]);
+throttle_fx = new Throttler(time, type_fx, 'probability', [[0, 360], [32, 1000]]);
 
 _(function() {
   return $('.slide-down-later').slideDown();

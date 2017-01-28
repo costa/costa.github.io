@@ -578,7 +578,7 @@ time = new Time
 font_repo = new GoogleFontRepository time, 66
 type_fx = new TypeFx time, font_repo
 throttle_fx = new Throttler time, type_fx, 'probability',
-  [[0,128],[2,32],[0.5,8],[0.25,4],[1,8],[2,16],[4,32],[8,64],[16,128],[32,256]]
+  [[0,360],[32,1000]]
 _(-> $('.slide-down-later').slideDown()).delay 10000
 
 slideTabs = ->

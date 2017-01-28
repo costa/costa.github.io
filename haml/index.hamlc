@@ -4,9 +4,9 @@
     %meta{charset: 'utf-8'}
     %meta{name: 'viewport', content: 'width=device-width, initial-scale=1'}
 
-    %title Costa Shapiro's App Shop
-    %meta{name: 'description', content: "Costa Shapiro's App Shop: Building an app for your business? Building apps is my business, it is one-stop full-stack construction . 25 years of industry experience at your service."}
-    %meta{name: 'author', content: "Costa Shapiro's App Shop"}
+    %title Costa Shapiro - CS R&D
+    %meta{name: 'description', content: "Costa Shapiro - CS R&D - Business Page"}
+    %meta{name: 'author', content: "Costa Shapiro"}
     %link{rel: 'image_src', href: 'logo-512x512.png'}
 
     %script{src: '//code.jquery.com/jquery-2.1.3.min.js'}
@@ -25,102 +25,19 @@
       %h1
         %span.centering-context
           %span.centering-inner
-            %span
-              %span.type-fx><
-                Costa
-              %span.type-fx><
-                Shapiro
-              %span.type-fx><
-                's
-            %span
-              %span.type-fx><
-                App
-              %span.type-fx><
-                Shop
+            %span.type-fx
+              Costa
+            %span.type-fx
+              Shapiro
       %h2
-        one-stop full-stack construction
+        no-nonsense product-oriented research and development
     %main
-      %h2
-        %span.centering-context
-          %span.centering-inner
-            %span.slide-down-later
-              %span.type-fx
-                Open
-              %span.type-fx
-                For
-              %span.type-fx
-                Business
-      .tabs-slider
-        %h3.active
-          Your Business
-        %h3
-          My Business
-        .slider
-          .slide
-            .tab
-              %ul
-                %li
-                  You have an app idea and you want a
-                  %strong
-                    credible assessment
-                  of the resources as to execute it.
-                  %br
-                  The results may surprise you one way or the other.
-                %li
-                  You have allocated the resources and you want to go ahead and
-                  %strong
-                    develop your
-                    %abbr{title: "minimal viable product"}<
-                      MVP
-                  app as soon as possible.
-                  %br
-                  The speed is of the essence, yet you don't want to develop debts.
-                %li
-                  You have an app project in development and you want a
-                  %strong
-                    pragmatic expert review
-                  of its technology, architecture or UX.
-                  %br
-                  Avoid personal attachment to existing code, stay business-oriented.
-                %li
-                  Well you may even be considering building an app alongside your main product line — and off your current area of expertise — so you have to decide between building a new team in house or just
-                  %strong
-                    launching the damn app.
-                  %br
-                  The team-building may be delayed until the app — built by app experts — has proven its value for your business.
-            .tab
-              %ul
-                %li
-                  I have a software development record going back to the pre-Internet era and visiting quite a few remarkable areas on the way.
-                  I've been loving to code since I learnt how; now I equally enjoy when my projects make business success.
-                %li
-                  I'm lucky to possess some rich academic background and have been crunching algorithms, complex structures and scientific data on more than one job.
-                  Naturally, I have both experience and interest in what is now called Big Data.
-                %li
-                  I've conducted numerous system integrations and I'm currently particularly fluent with social networking components.
-                %li
-                  I advocate lean and mean standards-based development, and have aquired criteria for chosing the optimal component or technique for a project situation.
-                  I enjoy being a part of the global developer's community which is now vital to efficient everyday work.
-      .work
-        %h3
-          My project leading work
-        %p
-          %a{href: 'http://aero-plan.com'}
-            %img.aero-plan.logo{src: 'aero-plan-logo-273x140.png', alt: "Visit aero-plan.com"}
-            %span.long-logo-desc
-              — Aero-plan.com: a previously owned U.S.-based project
-        %p
-          %a{href: 'http://fb-crush.com'}
-            %img.fb-crush.logo{src: 'fb-crush-logo-250x125.jpg', alt: "Visit fb-crush.com"}
-            %span.long-logo-desc
-              — fb-CRUSH.com: a somewhat neglected toy project of mine
-        %p
-          %a{href: 'http://astrails.com/work'}
-            %em Some other projects may be found in Astrails.com portfolio — ask for details
+      %p
+        How do you do?
     %footer
       %p
         %em
-          Now, do be in touch, I'm friendly:
+          Now, do be in touch, I'm pretty friendly:
       %p
         %a{href: '&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#x3a;&#99;&#111;&#115;&#116;&#97;&#x40;&#109;&#111;&#x75;&#x6c;&#100;&#x77;&#97;&#114;&#112;&#46;&#99;&#111;&#x6d;', title: "Mail Costa"} &#99;&#111;&#115;&#116;&#97;&#x40;&#109;&#111;&#x75;&#x6c;&#100;&#x77;&#97;&#114;&#112;&#46;&#99;&#111;&#x6d;
       %p
@@ -151,34 +68,20 @@
         %li
           UNIX
         %li
-          MacBookAir+OSX(+macports)
+          macOS+brew
         %li
-          git+github+pages+atom*
-        %li
-          Ruby+Rails+ecosystem
+          bash+spacemacs+git
         %li
           World+Wide+Web+technologies
         %li
-          jQuery+Backbone.js+Coffeescript
+          Ruby+Rails+ecosystem
         %li
-          PostgreSQL+Firebase
+          yarn+React+webpack+ecosystem
         %li
-          npm+gulp+bower+Browserify
-        %li
-          HAML+SASS+Bootstrap
-        %li
-          Mixpanel+UserVoice+CloudFlare
-        %li
-          AWS+DNSimple+Heroku+CircleCI
-        %li
-          WorkFlowy+Trello+Dropbox+Gmail
-        %li
-          Google Fonts
-        %li
-          All that jazz!
+          Docker+etc
       %hr
       .social
-        %a.twitter-share-button{'data-count': 'none', 'data-text': "Costa Shapiro's App Shop: one-stop full-stack construction", 'data-via': 'costashapiro', 'data-size': 'large', href: 'https://twitter.com/share'} Tweet
+        %a.twitter-share-button{'data-count': 'none', 'data-text': "Costa Shapiro - CS R&D", 'data-via': 'costashapiro', 'data-size': 'large', href: 'https://twitter.com/share'} Tweet
         %br
         :javascript
           !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
